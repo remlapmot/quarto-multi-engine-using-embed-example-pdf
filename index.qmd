@@ -3,6 +3,7 @@ title: An effectively multi-engine Quarto document using the embed shortcode
 format: pdf
 engine: knitr
 notebook-links: false
+papersize: a4
 ---
 
 ## R
