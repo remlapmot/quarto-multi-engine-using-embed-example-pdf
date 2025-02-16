@@ -1,0 +1,20 @@
+---
+jupyter: python3
+---
+
+```{python}
+print("Hello World, from Python")
+```
+
+```{python}
+#| fig-align: "center"
+#| fig-alt: "Plot of x cubed versus x."
+import matplotlib.pyplot as plt
+import numpy as np
+
+xpoints = np.arange(-10, 10, 0.1)
+ypoints = np.power(xpoints, 3)
+
+plt.plot(xpoints, ypoints)
+plt.show()
+```
