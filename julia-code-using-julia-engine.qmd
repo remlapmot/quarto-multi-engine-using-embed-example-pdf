@@ -1,5 +1,6 @@
 ---
 engine: julia
+# jupyter: julia-1.11
 ---
 
 ```{julia}
