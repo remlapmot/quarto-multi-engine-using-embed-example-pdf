@@ -16,13 +16,18 @@ Pkg.add("Plots")
 ```
 
 ```{julia}
-#| fig-align: "center"
-#| fig-alt: "Plot of x cubed versus x."
 #| warning: false
 #| message: false
-#| fig-format: png
+#| output: false
 using Plots
 x = range(-10, 10, length=1000)
 y = x .^ 3
-display(plot(x, y))
+p = plot(x, y)
 ```
+
+```{julia}
+#| include: false
+savefig(p, "myplot.pdf")
+```
+
+![](myplot.pdf){fig-alt="Plot of x cubed versus x."}
